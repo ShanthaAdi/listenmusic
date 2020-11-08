@@ -9,7 +9,7 @@ let isPlaying =false;
 
 play.addEventListener("click",question);
 
-play.addEventListener("touc",question);
+play.addEventListener("touch",question);
 function question()
 {
     isPlaying?pauseSong():playSong();
