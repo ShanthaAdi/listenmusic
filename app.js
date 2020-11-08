@@ -8,7 +8,7 @@ const progress=document.querySelector('.progress');
 let isPlaying =false;
 
 play.addEventListener("click",question);
-play.addEventListener("touchstart",question);
+play.addEventListener("touchend",question);
 
 function question()
 {
@@ -44,7 +44,7 @@ function changeSong(songIndex)
 numberOfSongs= name.length;
 songIndex = 0;
 prev.addEventListener("click", previousSong);
-prev.addEventListener("touchstart", previousSong);
+prev.addEventListener("touchend", previousSong);
 
 function previousSong(){
     songIndex--;
@@ -59,7 +59,7 @@ function previousSong(){
 
 
 next.addEventListener("click", nextSong);
-next.addEventListener("touchstart", nextSong);
+next.addEventListener("touchend", nextSong);
 
 function nextSong(){
     songIndex++;
