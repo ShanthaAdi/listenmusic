@@ -9,7 +9,7 @@ let isPlaying =false;
 
 play.addEventListener("click",question);
 
-play.addEventListener("touchend",question);
+play.addEventListener("touchmove",question);
 function question()
 {
     isPlaying?pauseSong():playSong();
@@ -45,7 +45,7 @@ numberOfSongs= name.length;
 songIndex = 0;
 prev.addEventListener("click", previousSong);
 
-prev.addEventListener("touchend", previousSong);
+prev.addEventListener("touchmove", previousSong);
 
 function previousSong(){
     songIndex--;
@@ -61,7 +61,7 @@ function previousSong(){
 
 next.addEventListener("click", nextSong);
 
-next.addEventListener("touchend", nextSong);
+next.addEventListener("touchmove", nextSong);
 
 function nextSong(){
     songIndex++;
